@@ -7,7 +7,9 @@ SHALLOW - 2023 Summer Workshop
 ## 技術與工具
 - MongoDB Atlas
 - Django
-- MongoDB Compass
+- CLI
+  - Atlas CLI
+  - MongoDB Database Tools (e.g. mongoimport)
 - Semantic UI
 - Plotly
 
