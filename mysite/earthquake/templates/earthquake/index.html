@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+</head>
+
+<body>
+    <div class="ui basic segment center aligned" style="min-height: 320px">
+        <form class="ui form" action="{% url 'search' %}" method="post" target="_blank">
+            {% csrf_token %}
+            <div class="ui icon header">
+                <i class="search icon"></i>Search by Magnitudes (震度)<br><br>
+            </div>
+
+            <br><br>
+            <div class="ui search Mag">
+                <div class="ui icon input">
+                    <input type="text" class="prompt" id="{{ search_form.fsearch_mag.id_for_label }}" name="{{ search_form.fsearch_mag.name }}" placeholder="Search Magnitude ...">
+                    <i class="search icon"></i>
+                </div>
+            </div>
+            <br><br>
+            <button class="ui blue button" type="submit">Search !</button>
+            <br>
+        </form>
+    </div>
+</body>
+</html>
+
