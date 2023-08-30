@@ -1,5 +1,4 @@
 from django.shortcuts import render
-# from django.http import HttpResponse
 from decouple import config
 from pymongo import MongoClient
 from .forms import SearchForm
