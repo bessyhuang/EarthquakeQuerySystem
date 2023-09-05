@@ -9,7 +9,10 @@ SHALLOW - 2023 Summer Workshop
 - Django
 - CLI
   - Atlas CLI
-  - MongoDB Database Tools (e.g. mongoimport)
+  - MongoDB Database Tools
+    `(e.g. mongoimport)`
+  - MongoDB Shell
+    `(e.g. mongosh)`
 - Semantic UI
 - Plotly
 
